@@ -1,0 +1,31 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Documentation
+*.md   text diff=markdown
+*.txt  text
+*.rst  text
+
+# Python
+*.py   text diff=python
+*.pyc  binary
+*.pyd  binary
+*.pyo  binary
+
+# JavaScript & TypeScript
+*.js   text
+*.jsx  text
+*.ts   text
+*.tsx  text
+*.json text
+
+# YAML
+*.yml  text
+*.yaml text
+
+# Dify specific
+app.yml linguist-language=YAML
+policy.md linguist-documentation=false linguist-detectable=true
+
+# Exclude files from language statistics
+.github/* linguist-documentation
